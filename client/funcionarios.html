@@ -1,0 +1,14 @@
+<div class="">
+    <a class="" href="/func/createfun">Adicionar Funcionário</a>
+</div>
+<div class="" ng-repeat="funcionario in funcionarios">
+    <div class="">
+        <div class="">
+            <span class=""><i class=""></i></span>
+            <span class="h4">{{funcionario.login}} - {{funcionario.senha}}</span>
+            <a href="func/funcionarios/{{funcionario.login}}" class="">
+            <i class=""></i> View
+            </a>
+        </div>
+    </div>
+</div>

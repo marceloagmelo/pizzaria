@@ -1,0 +1,14 @@
+<div class="">
+    <button class="" ng-click="deletar()">Excluir Pedidos</button>
+</div>
+<div class="" ng-repeat="pedido in pedidos">
+    <div class="">
+        <div class="">
+            <span class=""><i class=""></i></span>
+            <span class="">{{pedido._id}} - {{pedido.preco}}</span>
+            <a href="func/pedidos/{{pedido._id}}" class="">
+                <i class=""></i> View
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h2>Já fez seu pedido? Digite aqui o código de rastreamento para verificar o situação do seu pedido</h2>
+    <label for="rastreador">Digite aqui seu código</label>
+    <input type="text" id="rastreador" ng-model="rastreador">
+    <button ng-click="rastrear(rastreador)">Rastrear</button>
+</div>
+
+<div>
+    <p> Status: {{ pedido.status }} </p>
+</div>

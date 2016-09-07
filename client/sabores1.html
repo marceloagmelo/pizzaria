@@ -1,0 +1,15 @@
+<div class="">
+    <a href="/func/createsab" class="">Adicionar sabor</a>
+    <button class="" ng-click="deletar()">Excluir Sabores</button>
+</div>
+<div class="" ng-repeat="sabor in sabores">
+    <div class="">
+        <div class="">
+            <span class=""><i class=""></i></span>
+            <span class="">{{sabor.nome}}</span>
+            <a href="func/sabores/{{sabor._id}}" class="">
+                <i class=""></i> View
+            </a>
+        </div>
+    </div>
+</div>

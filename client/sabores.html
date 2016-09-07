@@ -1,0 +1,15 @@
+<div>
+    <h2>Escolha os sabores</h2>
+
+        <div  ng-repeat="sabor in sabores">
+                <button ng-click="addSabor(sabor.nome, sabor.preco)" ng-model="disable">
+                    <p>Ingredientes: <span ng-bind="sabor.ingredientes"></span></p>
+                    <p>Preços:
+                    Pequena: <span ng-bind="sabor.precoP"></span>
+                    Media: <span ng-bind="sabor.precoM"></span>
+                    Grande: <span ng-bind="sabor.precoG"></span></p>
+                </button>
+        </div>
+    <p>Tamanho: {{ tamanhoEscolhido }}</p>
+
+</div>

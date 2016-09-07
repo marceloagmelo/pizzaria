@@ -1,0 +1,32 @@
+<ul class="">
+    <li><a href="func/pedidos">Pedidos</a></li>
+    <li class="">{{pedido._id}} - {{pedido.preco}}</li>
+</ul>
+<div class="p">
+    <div class="">
+        <div class="">
+        </div>
+        <div class="">
+            <h3 class="">{{pedido._id}} - {{pedido.preco}}</h3>
+        </div>
+        <div class="">
+            <div class="">
+                <label class="">ID Pedido</label>
+                <div>#{{pedido._id}}</div>
+            </div>
+            <div class="">
+                <label class="">Pizzas: </label>
+                <p>{{pedido.pizzas}}</p>
+            </div>
+            <div class="">
+                <label>preco:</label>
+                <p>{{pedido.preco}}</p>
+                <label>Alterar Preço:
+                <input type="text" ng-model="preco">
+                </label>
+                <button class="" ng-click="atualizar()">Alterar Preço</button>
+                <button class="" ng-click="deletar()">Deletar Pedido</button>
+            </div>
+        </div>
+    </div>
+</div>

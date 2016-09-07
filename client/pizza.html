@@ -1,0 +1,75 @@
+<div class="pedido">
+
+    <div>
+            <p>Tamanho: {{ tamanhoEscolhido }}</p>
+            <p>Sabores: </p>
+            <div ng-repeat="saboresE in saborEscolhido">
+                <p>{{ saboresE }}</p>
+            </div>
+                <button ng-click="removeSabor()">Remover Sabor</button>
+            <p>Acompanhamentos: </p>
+            <div ng-repeat="acompanhamentoE in acompanhamentoEscolhido">
+                <p>{{ acompanhamentoE }}</p>
+            </div>
+                <button ng-click="removeAcompanhamento()">Remover Acompanhamento</button>
+            <p>Preço: {{ precoPedido }}</p>
+    </div>
+
+    <div>
+        <button ng-click="pequena()">Pequena (4 fatias)</button>
+        <button ng-click="media()">Média (6 fatias)</button>
+        <button ng-click="grande()">Grande (8 fatias)</button>
+    </div>
+
+    <div>
+        <h2>Escolha os sabores</h2>
+
+            <div  ng-repeat="sabor in sabores">
+                    <button ng-click="addSabor(sabor.nome, sabor.precoP, sabor.precoM, sabor.precoG, sabor.id)" ng-disabled="disable[sabor.id]">
+                        <p ng-bind="sabor.nome"></p>
+                        <p>Ingredientes: <span ng-bind="sabor.ingredientes"></span></p>
+                        <p>Preços:
+                        Pequena: <span ng-bind="sabor.precoP"></span>
+                        Media: <span ng-bind="sabor.precoM"></span>
+                        Grande: <span ng-bind="sabor.precoG"></span></p>
+                    </button>
+            </div>
+
+            <label for="especificacoes">Deseja retirar algum ingrediente da pizza?</label>
+            <input type="text" id="especificacoes" ng-model="especificacoes" placeholder="Ex. Sem Cebolas, sem tomates.">
+    </div>
+
+    <div>
+        <h2>Escolha os acompanhamentos</h2>
+
+            <div  ng-repeat="acompanhamento in acompanhamentos">
+                    <button ng-click="addAcompanhamento(acompanhamento.produto, acompanhamento.preco, acompanhamento.id)" ng-disabled="disableA[acompanhamento.id]">
+                        <p ng-bind="acompanhamento.produto"></p>
+                        <p>Preço: <span ng-bind="acompanhamento.preco"></span></p>
+                    </button>
+            </div>
+    </div>
+
+    <div>
+        <h2>Digite aqui seus dados para podermos fazer a entrega</h2>
+
+            <form>
+                <label for="cep">Cep: </label>
+                    <input type="text" id="cep" name="cep" ng-model="cep" placeholder="Ex. 49000-000">
+                    <button ng-click="buscarEndereco(cep)">Buscar endereço pelo Cep</button>
+                <label for="rua">Rua: </label>
+                    <input type="text" id="rua" name="rua" ng-model="rua" placeholder="Ex. Av. Rio de Janeiro">
+                <label for="bairro">Bairro: </label>
+                    <input type="text" id="bairro" name="bairro" ng-model="bairro" placeholder="Ex. Luzia">
+                <label for="telefone">Telefone: </label>
+                    <input type="tel" id="telefone" name="telefone" ng-model="telefone" value="" placeholder="">
+            <h3>Forma de Pagamento</h3>
+                <label for="dinheiro">Dinheiro</label>
+                    <input type="radio" id="dinheiro" name="forma_pagamento" ng-model="pagamento" value="dinheiro">
+                <label for="cartao">Cartão</label>
+                    <input type="radio" id="cartao" name="forma_pagamento" ng-model="pagamento" value="cartão">
+            <input type="submit" ng-click="finalizarPedido(rua, bairro, cep, telefone,pagamento)" value="Finalizar Pedido">
+            </form>
+    </div>
+
+</div>

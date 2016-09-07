@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="client" class="no-js">
+<head>
+    <title></title>
+    <meta chartset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+    <base href="/">
+</head>
+    <body>
+
+        <ul class="">
+             <li class=""><a href="/">Home</a></li>
+             <li><a href="/rastrear">Rastrear Pedido</a></li>
+             <li><a href="/local">Local</a></li>
+             <li><a href="/contato">Contato</a></li>
+             <li><a href="/sobre">Sobre</a></li>
+         </ul>
+
+         <!-- Mais Pedidas-->
+         <div>
+
+         </div>
+
+         <div ng-view ng-controller="Pizza">
+         </div>
+
+
+
+    <script type="text/javascript" src="/angular/angular.js"></script>
+    <script type="text/javascript" src="/angular/angular-route.js"></script>
+    <script type="text/javascript" src="/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/routes.js"></script>
+    <script type="text/javascript" src="/js/controllers/pizza.js"></script>
+    <script type="text/javascript" src="/js/controllers/tamanho.js"></script>
+    <script type="text/javascript" src="/js/controllers/pedidos.js"></script>
+    <script type="text/javascript" src="/js/controllers/sabores.js"></script>
+    <script type="text/javascript" src="/js/controllers/rastreamento.js"></script>
+    <script type="text/javascript" src="/js/controllers/ctrlSabor.js"></script>
+    <script type="text/javascript" src="/js/controllers/ctrlFuncionario.js"></script>
+    <script type="text/javascript" src="/js/controllers/ctrlPedido.js"></script>
+    <script type="text/javascript" src="/js/controllers/ctrlAcompanhamento.js"></script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="func" class="no-js">
+<head>
+    <title>WebPizza</title>
+    <meta chartset="UTF-8">
+    <base href="/">
+</head>
+    <body class="">
+         <ul class="">
+             <li class="active"><a href="/home">Home</a></li>
+             <li><a href="/func/funcionarios">Funcionários</a></li>
+             <li><a href="/func/sabores">Sabores</a></li>
+             <li><a href="/func/pedidos">Pedidos</a></li>
+         </ul>
+         <div ng-view></div>
+
+    <script type="text/javascript" src="/angular/angular.js"></script>
+    <script type="text/javascript" src="/angular/angular-route.js"></script>
+    <script type="text/javascript" src="/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="/funcionario/js/app.js"></script>
+    <script type="text/javascript" src="/funcionario/js/routes.js"></script>
+    <script type="text/javascript" src="/funcionario/js/controllers/ctrlSabor.js"></script>
+    <script type="text/javascript" src="/funcionario/js/controllers/ctrlFuncionario.js"></script>
+    <script type="text/javascript" src="/funcionario/js/controllers/ctrlPedido.js"></script>
+    </body>
+</html>

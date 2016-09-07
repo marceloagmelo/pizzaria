@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="login">
+<head>
+    <title></title>
+    <meta chartset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+</head>
+<body>
+    <div ng-controller="check">
+        <label for="login"></label>
+        <input type="text" name="login" ng-model="loginf" placeholder="">
+        <label for="senha"></label>
+        <input type="text" name="senha" ng-model="senhaf" placeholder="">
+        <button ng-click="logar()">Logar</button>
+
+        <p>{{funcionario.nome}}</p>
+    </div>
+</body>
+    <script type="text/javascript" src="/angular/angular.js"></script>
+    <script type="text/javascript" src="/angular/angular-resource.js"></script>
+    <script type="text/javascript" src="/funcionario/js/login.js"></script>
+</html>

@@ -1,0 +1,22 @@
+<ul class="">
+    <li><a href="func/sabores">Sabores</a></li>
+    <li class="">{{sabor.nome}}</li>
+</ul>
+<div>
+    <h3>{{sabor.nome}}</h3>
+</div>
+<div>
+    <h4>Ingredientes</h4>
+</div>
+<div class="">
+    <div class="">
+        <div class="">
+            <span class=""><i class=""></i></span>
+            <span class="">{{sabor.ingredientes}}</span>
+            <label>Alterar nome do sabor</label>
+            <input type="text" ng-model="nome" placeholder="Novo nome">
+            <button class="" ng-click="atualizar()">Alterar Nome</button>
+            <button class="" ng-click="deletar()">Excluir Sabor</button>
+        </div>
+    </div>
+</div>

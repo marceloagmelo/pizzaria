@@ -1,0 +1,1 @@
+- Ao atualizar a página na área dos funcionários o usuário está sendo redirecionado para a área de clientes
