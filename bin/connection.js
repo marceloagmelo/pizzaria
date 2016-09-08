@@ -2,7 +2,7 @@
 
 // Chamando Dependências
 var mongoose = require('mongoose');
-var dbUrl = 'mongodb://mongodb:27017/pizzaria';
+var dbUrl = 'mongodb://172.30.248.73:27017/pizzaria';
 //var dbUrl = process.env.MONGO_DB
 
 mongoose.connect(dbUrl);
