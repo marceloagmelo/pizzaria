@@ -2,7 +2,7 @@
 
 // Chamando Dependências
 var mongoose = require('mongoose');
-var dbUrl = 'mongodb://mongodb-pizzaria.router.default.svc.cluster.local/pizzaria';
+var dbUrl = 'mongodb://mongodb:27017/pizzaria';
 //var dbUrl = process.env.MONGO_DB
 
 mongoose.connect(dbUrl);
